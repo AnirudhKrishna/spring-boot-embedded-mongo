@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      database: testDB
+      port: 2777
+      host: localhost
+      collection: user
+
+

@@ -1,0 +1,44 @@
+---
+
+curl --location --request POST 'http://localhost:8080/api/tutorials' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "title": "sample2",
+    "description":"sample request 02"
+}'
+
+---
+
+curl --location --request GET 'http://localhost:8080/api/tutorials' \
+--header 'Content-Type: application/json' \
+--data-raw ''
+
+---
+
+curl --location --request GET 'http://localhost:8080/api/tutorials/5f3786d6d5e66adb2b68b00c' \
+--header 'Content-Type: application/json' \
+--data-raw ''
+
+---
+
+curl --location --request PUT 'http://localhost:8080/api/tutorials/5f3786d6d5e66adb2b68b00c' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "title": "sample2",
+    "description":"sample request 02",
+    "published":true
+}'
+
+---
+
+curl --location --request DELETE 'http://localhost:8080/api/tutorials/5f3786d6d5e66adb2b68b00c' \
+--header 'Content-Type: application/json' \
+--data-raw ''
+
+---
+
+curl --location --request DELETE 'http://localhost:8080/api/tutorials/' \
+--header 'Content-Type: application/json' \
+--data-raw ''
+
+---
